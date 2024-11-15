@@ -7,6 +7,7 @@ export default function Player() {
 
   function handleClick() {
     setEnteredPlayerName(playerName.current.value);
+    playerName.current.value = ""; // argument react is about writing declaritive code but here we are clearly using imperative code
   }
 
   return (
