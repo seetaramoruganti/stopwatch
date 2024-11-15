@@ -10,8 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('src/assets/mk.jpeg');
-  background-size: contain; /* Fit the entire image */
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   min-height: 100vh;
 }
