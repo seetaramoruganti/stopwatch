@@ -25,15 +25,13 @@ export default function TimerChallenge({ title, targetTime }) {
   function handleStart() {
     timer.current = setTimeout(() => {
       setTimerExpired(true);
-      dialog.current.showModal();
+      dialog.current.open();
     }, targetTime * 1000);
 
     setTimerStarted(true);
   }
 
   function handleStop() {
-    // So how can we stop this timer that we started in a handle start?
-    //  How are we specifically targeting the timer we started
     clearTimeout(timer.current);
   }
 
